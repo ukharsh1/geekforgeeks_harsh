@@ -1,1 +1,26 @@
-
+void sort012(int a[], int n)
+    {
+        // code here 
+        //sort(a,a+n);
+        int cnt1=0,cnt2=0,cnt3=0,pt=0;
+        for(int i=0;i<n;i++){
+            if(a[i]==0){
+                cnt1++;
+            }
+            else if(a[i]==1){
+                cnt2++;
+            }
+            else cnt3++;
+        }
+        int py=0;
+        for(int i=0;i<cnt1;i++){
+            a[pt++]=0;
+        }
+        for(int i=cnt1;i<cnt1+cnt2;i++){
+            a[pt++]=1;
+        }
+        for(int i=cnt1+cnt2;i<cnt1+cnt2+cnt3;i++){
+            a[pt++]=2;
+        }
+        
+    }
