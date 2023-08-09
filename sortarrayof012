@@ -22,5 +22,6 @@ void sort012(int a[], int n)
         for(int i=cnt1+cnt2;i<cnt1+cnt2+cnt3;i++){
             a[pt++]=2;
         }
-        
-    }
+
+
+}
